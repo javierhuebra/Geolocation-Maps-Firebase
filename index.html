@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style1.css">
+    <title>Geolocalización y Registro</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- ACA IMPORTO LOS ICONOS -->
+    <script src="https://kit.fontawesome.com/bca655c0fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+
+        
+        <nav class="nav-bar">
+            <div>
+                <img src="images/tronco_logo.png" alt="" id="logaso">
+                <img src="images/losmonos.png" alt="" id="imagen_logo">
+            </div>
+            <i class="fa-solid fa-bars"></i>
+            <ul class="nav-ul">
+                <button class="boton-capturar"><i class="fa-solid fa-location-crosshairs"></i>Geolocate</button>
+                <li class="nav-li"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/javieremanuelhuebra/">Linkedin</a></li>
+                <li class="nav-li"><i class="fa-brands fa-github"></i><a href="https://github.com/javierhuebra">gitHub</a></li>
+                <li class="nav-li"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/juniorhuebra">Twitter</a></li>
+                <li class="nav-li" id="informacion_app"><i class="fa-solid fa-circle-info"></i>Sobre la app</li>
+            </ul>
+            
+        </nav>
+    
+
+        <h2 id="texto_coordenadas"></h2>
+        <div class="centrador">
+        <div class="relativo">
+            <div class="info-app-visible">
+                <img id="mono_cara" src="images/monillo_cara.png" alt="">
+                <h4>Informacion de la app</h4>
+                <p id="parrafo_info">
+                    La aplicación "Los monos dicen" es para <span>contextualizar</span> una expresión con un lugar físico <i class="fa-solid fa-map-location-dot"></i><br><br>
+                    Esta vez jugamos a ser monos... animales en una jungla y buscamos cierto grado de organización.<br><br>
+                    Resulta que ya no somos tan primates como pensábamos y hemos descubierto que <span>un mensaje en el lugar correcto</span> puede empezar a mejorar cosas.
+                </p>
+                <button id="cerrar_info">Cerrar</button>
+            </div>
+        <img class="troncos_verticales" id="tronco_arriba" src="images/tronco_horizontal.png" alt="">   
+        <img class="troncos_laterales" id="tronco_izquierdo" src="images/tronco.png" alt="">
+        <img class="troncos_verticales" id="tronco_abajo" src="images/tronco_horizontal.png" alt="">
+        <img class="troncos_laterales" id="tronco_derecho" src="images/tronco.png" alt="">
+        <div id="map"></div>
+        </div>
+    </div>
+        <div class="foot-bar">
+            <p>Los monos dicen V1.0 ©</p>
+        </div>
+        <div class="footer">
+            <img id="monillo_1"src="images/monillo.png" alt="">
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- IMPORTO A GOOGLE MAPS -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB202eWC5dNkthg86xkoQRCR536u-hrTmg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <!-- IMPORTO A FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <!-- IMPORTO A MIS SCRIPTS -->
+    <script src="scripts/configuracion.js"></script>
+    <script src="scripts/guardar.js"></script>
+    <script src="scripts/script_primario.js"></script>
+</body>
+</html>
