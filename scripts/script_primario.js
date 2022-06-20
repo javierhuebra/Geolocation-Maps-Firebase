@@ -7,3 +7,5 @@ document.getElementById("informacion_app").addEventListener("click",()=>{
     document.querySelector(".info-app-oculta").classList.add("info-app-visible");
     document.querySelector(".info-app-oculta").classList.remove("info-app-oculta");
 })
+
+//Prueba de actualizacion en github
