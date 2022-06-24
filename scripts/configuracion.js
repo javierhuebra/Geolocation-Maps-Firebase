@@ -3,7 +3,7 @@
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
-    apiKey: "AIzaSyCiU1lw415-uB-MseZ05a0QdfWn7TV6Lnw",
+    apiKey: "API-KEY",
     authDomain: "geo-location-prueba.firebaseapp.com",
     projectId: "geo-location-prueba",
     storageBucket: "geo-location-prueba.appspot.com",
