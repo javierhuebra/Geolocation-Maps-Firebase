@@ -8,9 +8,9 @@ Try this project <a target='_blank' href='https://losmonosdicen.netlify.app/'>HE
 </p>
 
 # Tools used
-- Typical basics of html, js and css
+- HTML, JS and CSS
 - Google maps Api
-- Firebase
+- Firebase for storage
 
 # Context
 I like to use google tools, they are great. Learning this type of tools will allow me to scale my future projects
